@@ -1,11 +1,20 @@
 public class array {
-    public static void main(String args[]){
-        int [] numbers = {12,32,12,5,75,3,67};
-        System.out.println("the nummber is " + numbers[4]);
 
-        for(int i = 0; i < numbers.length;i ++){
-            System.out.println(numbers[i]);
+
+    public static void main(String[] args) {
+        // for declairing 2D arrays
+        int [][] numbers = {
+            {1,2,3,4},
+            {5,6,7,8},
+            {9,0,11,12}
+        };
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers[i].length; j ++) {
+                System.out.print(numbers[i] + " " + [j]);
+            }
+            System.out.println();
+            
         }
+        
     }
-    
 }
